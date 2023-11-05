@@ -35,4 +35,31 @@ public class day03 {
 	    }
 	   
 	}
+	
+	/* 4. 더 크게 합치기 */
+	class Solution4 {
+	    public int solution(int a, int b) {
+	        int ab = Integer.parseInt(Integer.toString(a) + Integer.toString(b));
+	        int ba = Integer.parseInt(Integer.toString(b) + Integer.toString(a));
+	        return ab >= ba ? ab : ba;
+	    }
+	}
+	
+	/* 5. 두 수의 연산값 비교하기 */
+	class Solution5 {
+	    public int solution(int a, int b) {
+	        int answer = 0;
+	        String ab = Integer.toString(a) + Integer.toString(b);
+
+	        if(Integer.parseInt(ab) >= (2 * a * b)){
+	            answer = Integer.parseInt(ab);
+	        }
+	        else answer = 2 * a * b;
+
+	        return answer;
+	    }
+	}
+
+	
+
 }
